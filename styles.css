@@ -36,8 +36,10 @@ nav a:hover {
   letter-spacing: 2px;
   color: #FDBA5C;
 }
+/* Updated Hero Section for Image Background */
 #hero {
-  background: linear-gradient(135deg, #334DFF 70%, #FDBA5C 100%);
+  background: url('bg.jpg') no-repeat center center;
+  background-size: cover;
   color: #fff;
   padding: 100px 0 70px 0;
   text-align: center;
