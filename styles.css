@@ -7,7 +7,7 @@ body {
 }
 nav {
   background: #F6F8FB;
-  color: #fff;
+  color: #F6F8FB;
   padding: 18px 40px;
   display: flex;
   justify-content: space-between;
@@ -173,4 +173,5 @@ footer {
     padding: 18px;
   }
 }
+
 
