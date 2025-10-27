@@ -62,16 +62,6 @@ nav a:hover {
     display: flex;
   }
 }
-
-.logo {
-  font-weight: bold;
-  font-size: 1.3em;
-  letter-spacing: 2px;
-  color: #FDBA5C;
-}
-/* ...rest of your CSS remains unchanged... */
-
-
 .logo {
   font-weight: bold;
   font-size: 1.3em;
@@ -208,17 +198,5 @@ footer {
     flex-direction: column;
     gap: 18px;
   }
-  nav ul {
-    flex-direction: column;
-    gap: 12px;
-    background: #21222a;
-    padding: 18px;
-  }
+  /* Removed nav ul block here to avoid responsive conflict */
 }
-
-
-
-
-
-
-
