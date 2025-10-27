@@ -6,31 +6,35 @@ body {
   margin: 0;
 }
 nav {
-  background: #F6F8FB;
-  color: #F6F8FB;
+  background: #F6F8FB;    /* Light grey background */
+  color: #334DFF;         /* Blue text for logo and menu */
   padding: 18px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
+  box-shadow: 0 1px 12px rgba(51,77,255,0.05); /* optional subtle shadow */
 }
+
 nav ul {
   list-style: none;
   margin: 0;
-  color: #23364D;
   display: flex;
   gap: 34px;
 }
+
 nav a {
-  color: #fff;
+  color: #334DFF;         /* Blue from your highlights/logo */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
 }
+
 nav a:hover {
-  color: #FDBA5C;
+  color: #23364D;         /* Darker blue on hover (logo accent) */
 }
+
 .logo {
   font-weight: bold;
   font-size: 1.3em;
@@ -174,6 +178,7 @@ footer {
     padding: 18px;
   }
 }
+
 
 
 
