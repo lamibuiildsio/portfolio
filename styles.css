@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 nav {
-  background: #F6F8FB;    /* Light grey background */
+  background: #ECECEC;    /* Light grey background */
   color: #334DFF;         /* Blue text for logo and menu */
   padding: 18px 40px;
   display: flex;
@@ -178,6 +178,7 @@ footer {
     padding: 18px;
   }
 }
+
 
 
 
