@@ -1,3 +1,12 @@
+body {
+  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+  color: #2A2D34;
+  background: #F6F8FB;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 nav {
   background: #ececec;
   color: #334DFF;
@@ -10,7 +19,7 @@ nav {
   box-shadow: 0 1px 12px rgba(51,77,255,0.05);
 }
 .nav-toggle {
-  display: none;
+  display: flex; /* always show hamburger */
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
@@ -26,9 +35,22 @@ nav {
 nav ul {
   list-style: none;
   margin: 0;
-  display: flex;
+  display: none; /* hide menu initially on all screen sizes */
   gap: 34px;
   transition: all 0.3s;
+}
+nav ul.active {
+  display: flex;
+  flex-direction: column; /* for mobile style */
+  background: #ececec;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 180px;
+  box-shadow: 0 6px 24px rgba(51,77,255,0.06);
+  border-radius: 0 0 12px 12px;
+  padding: 28px 0;
+  z-index: 100;
 }
 nav a {
   color: #334DFF;
@@ -200,3 +222,4 @@ footer {
   }
   /* Removed nav ul block here to avoid responsive conflict */
 }
+
