@@ -1,12 +1,16 @@
+/* Global font styles */
 body {
   font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
   color: #2A2D34;
   background: #F6F8FB;
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  /* Font smoothing for crisp text on all platforms */
+  -webkit-font-smoothing: antialiased; /* Safari, Chrome */
+  -moz-osx-font-smoothing: grayscale;  /* Firefox on Mac */
 }
 
+/* Navigation styles */
 nav {
   background: #ececec;
   color: #334DFF;
@@ -16,15 +20,17 @@ nav {
   align-items: center;
   position: sticky;
   top: 0;
-  box-shadow: 0 1px 12px rgba(51,77,255,0.05);
+  box-shadow: 0 1px 12px rgba(51, 77, 255, 0.05);
 }
+
 .nav-toggle {
-  display: flex; /* always show hamburger */
+  display: flex;
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
   margin-left: 15px;
 }
+
 .nav-toggle span {
   display: block;
   width: 32px;
@@ -32,35 +38,42 @@ nav {
   background: #334DFF;
   border-radius: 2px;
 }
+
 nav ul {
   list-style: none;
   margin: 0;
-  display: none; /* hide menu initially on all screen sizes */
+  display: none;
   gap: 34px;
   transition: all 0.3s;
 }
+
 nav ul.active {
   display: flex;
-  flex-direction: column; /* for mobile style */
+  flex-direction: column;
   background: #ececec;
   position: absolute;
   top: 70px;
   right: 20px;
   width: 180px;
-  box-shadow: 0 6px 24px rgba(51,77,255,0.06);
+  box-shadow: 0 6px 24px rgba(51, 77, 255, 0.06);
   border-radius: 0 0 12px 12px;
   padding: 28px 0;
   z-index: 100;
 }
+
 nav a {
   color: #334DFF;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
 }
+
 nav a:hover {
   color: #23364D;
 }
+
+/* Remaining styles unchanged */
+
 /* Mobile Hamburger Menu */
 @media (max-width: 800px) {
   .nav-toggle {
@@ -222,4 +235,5 @@ footer {
   }
   /* Removed nav ul block here to avoid responsive conflict */
 }
+
 
