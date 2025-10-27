@@ -6,8 +6,8 @@ body {
   margin: 0;
 }
 nav {
-  background: #ECECEC;    /* Light grey background */
-  color: #334DFF;         /* Blue text for logo and menu */
+  background: #ececec;     /* Updated grey shade */
+  color: #334DFF;          /* Blue text for logo and menu */
   padding: 18px 40px;
   display: flex;
   justify-content: space-between;
@@ -25,14 +25,14 @@ nav ul {
 }
 
 nav a {
-  color: #334DFF;         /* Blue from your highlights/logo */
+  color: #334DFF;          /* Blue for links */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
 }
 
 nav a:hover {
-  color: #23364D;         /* Darker blue on hover (logo accent) */
+  color: #23364D;          /* Darker blue on hover */
 }
 
 .logo {
@@ -178,6 +178,7 @@ footer {
     padding: 18px;
   }
 }
+
 
 
 
