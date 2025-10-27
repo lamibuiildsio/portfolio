@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 nav {
-  background: #21222a;
+  background: #F6F8FB;
   color: #fff;
   padding: 18px 40px;
   display: flex;
@@ -173,3 +173,4 @@ footer {
     padding: 18px;
   }
 }
+
